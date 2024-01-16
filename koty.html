@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="baner"><h1>zdjecia kotow</h1></div>
+    <div id="lewy">
+        <h2>kategorie</h2>
+        <ul>
+            <li><a href="psy.html">psy</a></li>
+            <li><a href="koty.html">koty</a></li>
+            <li>gryzonie</li>
+            <li>jaszczurki</li>
+            <li>inne zdjecia</li>
+         </ul>
+         <h4><a href="index.html">powrot do strony glownej</a></h4>
+    </div>
+
+    <div id="prawy">
+        <h1>wybierz zdjecie</h1>
+        <img class="maleimg" src="kot1.jpg" alt="kot1" >
+    </div>
+    <div id="prawy2"><p ><img id="dolneimg" src="kot1.jpg" alt="kot-duzy"></p></div>
+    <footer>Galerie zdjec opracowal:ja</footer>
+</body>
+<script>
+    function zmien(obj)
+    {
+        document.getElementById("dolneimg").setAttribute("src", obj.src);
+    }
+</script>
+</html>
